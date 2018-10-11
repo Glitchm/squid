@@ -14,7 +14,7 @@ echo "Initializing cache..."
 "$SQUID" -z
 
 # Give the Squid cache some time to rebuild.
-#sleep 5
+sleep 5
 
 # Launch squid
 echo "Starting Squid..."
