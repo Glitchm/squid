@@ -5,9 +5,8 @@ ENV SQUID_VERSION=3.5.27-r2 \
     SQUID_LOG_DIR=/var/log/squid \
     SQUID_USER=squid
 
-RUN apk update && apk add squid=${SQUID_VERSION} \
-    && apk add curl \
-    && rm -rf /var/cache/apk/*
+RUN apk add --no-cache squid=${SQUID_VERSION} \
+    curl
     
 COPY entrypoint.sh /usr/local/bin
 
