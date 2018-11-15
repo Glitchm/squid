@@ -1,1 +1,1 @@
-squid
+Docker squid proxy container
